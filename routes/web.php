@@ -19,3 +19,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/about', [TestController::class, 'index'])->name('about');
+
+Route::get('/post',[TestController::class, 'post'])->name('post');
+
+Route::get('/contact',[TestController::class, 'contact'])->name('contact');
